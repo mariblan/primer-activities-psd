@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar start */
+header {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffff;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid #cccccc57;
+}
+header > div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  width: 20rem;
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+}
+.navleft img {
+  width: 20%;
+}
+
+.navright ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navright ul li {
+  list-style: none;
+  /* margin: 0 0.5rem; */
+}
+.navright ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+/* MAIN START */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+section > section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+section > h3 {
+  color: #ae1543;
+  font-family: 'Inter';
+  font-size: 14px;
+}
+
+/* Hero section */
+.hero {
+  background-image: url(./resources/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  color: white;
+}
+.hero div {
+  position: absolute;
+  top: 8.5rem;
+  left: 10.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 19rem;
+}
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 500;
+}
+.hero h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.hero p {
+  font-size: 0.75rem;
+}
+.hero button {
+  width: 14.3rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ae1543;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Our story Start */
+.our-story {
+  background: #ffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.our-story p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  opacity: 0.78;
+  max-width: 95rem;
+}
+/* Our story End */
+
+/* Our courses Start */
+.our-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.course-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+/* card start*/
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem 1.5rem 1.5rem;
+}
+.card-container h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #121212;
+}
+.card-container p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #454545;
+}
+
+.card-container button {
+  border: 2px solid #8f0830;
+  border-radius: 5px;
+  color: #8f0830;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 0.3rem;
+}
+/* Card end*/
+/* Our courses End */
+
+/* Our reviews Start */
+
+.reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 2rem 0 0rem;
+}
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slider button {
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+}
+.review-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.review {
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.review > h6 {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 700;
+}
+.review > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: #454545;
+}
+
+.stars {
+  display: flex;
+}
+
+/* Our reviews End */
+
+/* Our what course Start */
+
+.what-course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.what-course div {
+  width: 100%;
+  padding: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+table {
+  width: 85%;
+  border-spacing: 0;
+  border: 1px solid #cccccc57;
+  border-radius: 15px;
+  align-self: center;
+}
+table tr th,
+td {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  border: 1px solid #cccccc57;
+  width: 5%;
+}
+.top-left-cell {
+  border-radius: 15px 0 0 0;
+}
+.top-right-cell {
+  border-radius: 0 15px 0 0;
+}
+.bottom-left-cell {
+  border-radius: 0 0 0 15px;
+}
+.bottom-right-cell {
+  border-radius: 0 0 15px 0;
+}
+
+.what-course button {
+  width: 10rem;
+  padding: 0.3rem;
+  margin: 1rem;
+  border: 2px solid #ae1543;
+  border-radius: 7px;
+  background: #fff;
+  color: #ae1543;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Our what course End */
+
+/* About us Start */
+.about-us {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.values {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#ourApproach {
+  flex-direction: row;
+}
+.values > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid #cccccc57;
+  border-radius: 8px;
+  padding: 3rem;
+  height: 24.5vh;
+  max-width: 50rem;
+  min-width: 25rem;
+  flex: 1 1 40%;
+}
+.values > .image {
+  width: 12.9rem;
+  height: 24.5vh;
+  overflow: hidden;
+}
+.values > .image > img {
+  width: 100%;
+}
+.values > div h3 {
+  color: #ae1543;
+  font-family: 'Inter';
+  font-size: 14px;
+}
+.values > div p {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 20rem;
+  max-width: 41rem;
+}
+/* About us End */
+
+/* Numbers Start */
+.numbers {
+  margin: 2rem 0;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.numbers h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.listOfNumbers {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.listOfNumbers > div {
+  max-width: 12rem;
+  min-width: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.listOfNumbers > div > h3 {
+  font-weight: 800;
+}
+.listOfNumbers > div > p {
+  text-align: center;
+}
+
+/* Numbers End */
+
+/* Hero2 now banner Start */
+
+.hero2 {
+  margin: 3rem 0;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: #56011a;
+  color: #ffff;
+}
+.hero2 > div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero2 h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 40rem;
+  text-align: center;
+}
+.hero2 p {
+  font-size: 1rem;
+  color: #fafafa;
+}
+.hero2 button {
+  width: 14.3rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  background-color: #ae1543;
+  color: #ffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Hero2 End */
+
+/* APPLY PAGE START */
+.contact-page {
+  background-color: #e5e5e5;
+  font-size: 12px;
+}
+.contact-page .apply {
+  margin: 2.5rem 0;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.contact-page .apply-container {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact-page .apply-container h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+.contact-page .contact-container, .contact-page .join-now {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-page .join-now > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact-page .join-now > div > p {
+  color: #787878;
+}
+.contact-page .contact-container {
+  gap: 1rem;
+}
+.contact-page .form-container {
+  flex: 1 1 25rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 0 0 0 1rem;
+}
+
+.contact-page .apply-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-page .fieldsets,
+.contact-page .course-info,
+.contact-page .about-you,
+.contact-page .select,
+.contact-page .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.contact-page .fieldsets {
+  gap: 1rem;
+}
+.contact-page fieldset {
+  border: none;
+}
+.contact-page label, .contact-page li {
+  margin-top: 0.5rem;
+}
+.contact-page select, .contact-page .contact-info input {
+  padding: 0.3rem;
+  border: 1px solid #cccccc57;
+  border-radius: 5px;
+  outline: none;
+}
+.contact-page ol {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.contact-page .experience, .contact-page .contact-info {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-page .checkboxes {
+  margin: 0.5rem 0 0 -1rem;
+  max-width: 25rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+.contact-page .checkboxes div {
+  width: 7rem;
+}
+/* APPLY PAGE END */
+
+/* MAIN END */
+
+/* FOOTER START */
+.contact-us {
+  width: 80%;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem 0;
+}
+.contact-us .lets-talk {
+  padding: 0rem 1rem;
+  margin: 0 1rem;
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 1.5rem;
+}
+
+.contact-us .lets-talk h2 {
+  font-size: 2.2rem;
+}
+
+.contact-us .lets-talk ul {
+  display: grid;
+  gap: 1rem;
+  margin-left: 1.5rem;
+}
+
+.contact-us .lets-talk b {
+  font-weight: 800;
+}
+
+.contact-us .form-container {
+  border-left: 1px solid #cccccc57;
+  padding: 1.5rem 2rem 1rem;
+}
+
+.contact-us .form-container form {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+}
+.contact-us .form-container div {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.contact-us .form-container input,
+.contact-us .form-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #cccccc57;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-us .form-container button {
+  width: 10rem;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #ae1543;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* FOOTER END */

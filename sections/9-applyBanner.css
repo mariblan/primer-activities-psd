@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar start */
+header {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffff;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid #cccccc57;
+}
+header > div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  width: 20rem;
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+}
+.navleft img {
+  width: 20%;
+}
+
+.navright ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navright ul li {
+  list-style: none;
+  /* margin: 0 0.5rem; */
+}
+.navright ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+/* MAIN START */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply now banner Start */
+
+.apply {
+  margin: 2.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  background-color: #56011a;
+  color: #ffff;
+}
+.apply > div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.apply h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 40rem;
+  text-align: center;
+}
+.apply p {
+  font-size: 1rem;
+  color: #fafafa;
+}
+.apply button {
+  width: 14.3rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  background-color: #ae1543;
+  color: #ffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Apply now banner End */

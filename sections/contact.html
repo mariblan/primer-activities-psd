@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code - Contact us</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navleft">
+        <img src="./resources/logo.png" alt="code" />
+      </nav>
+      <nav class="navright">
+        <ul>
+          <li><a href="#">Our Courses</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact-us" id="contact-us">
+      <section class="lets-talk">
+        <h2>Let's talk</h2>
+        <p>
+          We're here to help! Drop us a message, and our team will get back to
+          you promptly.
+        </p>
+        <ul>
+          <li>Have questions about our courses?</li>
+          <li>Enrollment process</li>
+          <li>
+            Or anything else? We're here to help! Drop us a message, and our
+            team will get back to you promptly. Your Coding journey starts with
+            a conversation.
+          </li>
+        </ul>
+
+        <p><b>Your coding journey starts with a conversation</b></p>
+        <p>If you prefer a good old fashioned email you can find us at:</p>
+        <p><b>info@coding.com</b></p>
+      </section>
+      <section class="form-container">
+        <form>
+          <div>
+            <label for="fname">First name</label>
+            <input
+              type="text"
+              placeholder="First name"
+              id="fname"
+              name="fname"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="adress@email.com"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div>
+            <label for="message">How can we help you?</label>
+            <textarea
+              placeholder="Tell us what can we help you with"
+              name="message"
+              id="message"
+              cols="40"
+              rows="9"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
